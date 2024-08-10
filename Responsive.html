@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body{
+            border: 2px solid cadetblue;
+            max-width: 1060px;
+            margin: 0 auto;
+        }
+        h3{
+            padding: 10px;
+        }
+        .image-contener{
+            display: flex;
+        }
+        .image-contener div{
+            width: 50%;
+        }
+        .image-contener img{
+            width: 100%;
+        }
+        @media  screen and (max-width:576px) {
+            .image-contener{
+                flex-direction: column;
+            } 
+            .image-contener div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>A Responsive web-site</h3>
+    <header>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS Relative unit</li>
+            <li>Body Max-width and horizontal center aline</li>
+            <li>Image Fluid</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </header>
+    <main>
+        <div class="image-contener">
+            <div>
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/Royal-Bengal-Tiger.jpg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
